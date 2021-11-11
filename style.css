@@ -21,7 +21,7 @@
 
     cursor: pointer;
 
-    z-index: 10;
+    z-index: 1000;
 }
 
 .toggle.active {
@@ -75,7 +75,7 @@ section{
     object-fit: cover;
 }
 
-.banner .contentBox {
+.banner .contentBox, .sidebar {
     display: flex;
 
     justify-content: center;
@@ -128,4 +128,85 @@ p {
     font-weight: 500;
     letter-spacing: 2px;
     text-decoration: none;
+}
+
+/* >>>>>>>>>> sidebar <<<<<<<<<<< */
+
+.sidebar {
+    display: flex;
+
+    position: fixed;
+    
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    
+    background: #000;
+
+    transition: .5s;
+
+    right: -100%;
+    z-index: 100;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    margin: 0.625rem 0;
+    
+    font-size: 2em;
+    
+    color: #fff;
+}
+
+.sidebar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* >>>>>>>>>> Social <<<<<<<<<<< */
+
+.social {
+    display: flex;
+    position: absolute;
+
+    align-items: center;
+    justify-content: center;
+
+    left: 100px;
+    bottom: 20px;
+}
+
+.social li {
+    list-style: none;
+
+    margin-right: 10px;
+}
+
+.social li img {
+    opacity: 0.7;
+}
+
+.social li img:hover {
+    opacity: 1;
 }
