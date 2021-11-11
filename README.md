@@ -1,2 +1,2 @@
-# Portifolio
+# Portfolio
 > Status: Developing
