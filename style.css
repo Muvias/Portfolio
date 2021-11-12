@@ -4,6 +4,34 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px;
+    min-height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    
+    top: 40px;
+    left: 100px;
+    padding: 0 5px;
+
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    background: #333;
+    color: #fff;
+}
+
+p {
+    margin: 20px 0;
+
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
 .toggle {
@@ -29,27 +57,6 @@
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-section{
-    padding: 100px;
-    min-height: 100vh;
-}
-
-
-.logo {
-    position: absolute;
-    
-    top: 40px;
-    left: 100px;
-    padding: 0 5px;
-
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-    background: #333;
-    color: #fff;
 }
 
 .banner {
@@ -108,13 +115,6 @@ section{
 
     font-size: 3em;
     line-height: 1em;
-}
-
-p {
-    margin: 20px 0;
-
-    font-size: 1.1em;
-    font-weight: 300;
 }
 
 .button {
@@ -209,4 +209,76 @@ p {
 
 .social li img:hover {
     opacity: 1;
+}
+
+/* >>>>>>>>>> Titles <<<<<<<<<<< */
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title.white h2,
+.title.white p {
+color: #fff;
+}
+
+.title h2 {
+    position: relative;
+    color: #00bcd4;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title h2::before {
+    content: '';
+    position: absolute;
+    
+    width: 60px;
+    height: 4px;
+    left: 50%;
+    bottom: -10px;
+    
+    transform: translateX(-50%);
+    
+    background: #000;
+}
+
+.title.white h2::before {
+    background: #fff;
+}
+
+.title h2 p {
+    max-width: 700px;
+    display: inline-block;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ABOUT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.about {
+    background: #000;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about .content .textBox {
+    min-width: 49%;
+    width: 49%;
+}
+
+.about .content .textBox p {
+    color: #fff;
+}
+
+.about .content .imgBox {
+    margin-left: 40px;
+}
+
+.about .content .imgBox img {
+    max-width: 100%;
 }
