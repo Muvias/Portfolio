@@ -282,3 +282,52 @@ color: #fff;
 .about .content .imgBox img {
     max-width: 100%;
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Services <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services .content .servicesBox {
+    text-align: center;
+
+    max-width: 340px;
+
+    padding: 40px 20px;
+    margin: 20px;
+    
+    transition: 0.5s;
+
+    background: #f5f5f5;
+}
+
+.services .content .servicesBox:hover {
+    background: #000;
+
+    color: #fff;
+}
+
+.services .content .servicesBox h2 {
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.services .content .servicesBox p {
+    margin: 0;
+}
+
+.services .content .servicesBox img {
+    max-width: 80px;
+    transition: 0.5s;
+}
+
+.services .content .servicesBox:hover img {
+    filter: invert(1);
+}
