@@ -104,7 +104,7 @@ p {
 }
 
 .banner .contentBox h4 span {
-    color: #00bcd4;
+    color: #fec63e;
 
     font-size: 1.5em;
     font-weight: 700;
@@ -118,7 +118,7 @@ p {
 }
 
 .button {
-    background: #00bcd4;
+    background: #fec63e;
     color: #fff;
 
     display: inline-block;
@@ -128,6 +128,12 @@ p {
     font-weight: 500;
     letter-spacing: 2px;
     text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #fcbb25;
 }
 
 /* >>>>>>>>>> sidebar <<<<<<<<<<< */
@@ -181,7 +187,7 @@ p {
 }
 
 .sidebar ul li a:hover {
-    color: #00bcd4;
+    color: #fec63e;
 }
 
 /* >>>>>>>>>> Social <<<<<<<<<<< */
@@ -220,12 +226,12 @@ p {
 
 .title.white h2,
 .title.white p {
-color: #fff;
+    color: #fff;
 }
 
 .title h2 {
     position: relative;
-    color: #00bcd4;
+    color: #fec63e;
     font-size: 1.8em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -246,7 +252,7 @@ color: #fff;
 }
 
 .title.white h2::before {
-    background: #fff;
+    background: #fec63e;
 }
 
 .title h2 p {
@@ -306,7 +312,7 @@ color: #fff;
 }
 
 .services .content .servicesBox:hover {
-    background: #000;
+    background: #fec63e;
 
     color: #fff;
 }
@@ -325,9 +331,143 @@ color: #fff;
 
 .services .content .servicesBox img {
     max-width: 80px;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .services .content .servicesBox:hover img {
     filter: invert(1);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Work <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.work .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.work .content .workBox {
+    position: relative;
+
+    text-align: center;
+
+    width: 265px;
+    height: 265px;
+    margin: 10px;
+
+    transition: 0.5s;
+}
+
+.work .content .workBox .imgBox,
+.work .content .workBox .textBox {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.work .content .workBox .imgBox img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;    
+}
+
+.work .content .workBox .textBox {
+    background: #000;
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+.work .content .workBox:hover .textBox {
+    opacity: 1;
+}
+
+.work .content .workBox:hover h3 {
+    color: #fec63e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Contact <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #000;
+
+}
+
+.contact .contactForm {
+    position: relative;
+
+    width: 700px;
+    margin-top: 20px;
+}
+
+.contact .contactForm .row {
+    display: flex;
+
+    width: 100%;
+}
+
+.contact .contactForm .row .col50 {
+    width: 50%;
+    margin: 10px;
+}
+
+.contact .contactForm .row .col100 {
+    text-align: center;
+
+    width: 100%;
+    margin: 10px;
+}
+
+.contact .contactForm .row input,
+.contact .contactForm .row textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+
+    border: none;
+    outline: none;
+
+    background: #dba933;
+    color: #111;
+
+    resize: none;
+}
+
+.contact .contactForm .row textarea {
+    height: 100px;
+}
+
+.contact .contactForm .row input[type="submit"] {
+    display: inline-block;
+    padding: 10px 30px;
+    max-width: 150px;
+
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    color: #000;
+
+    cursor: pointer;
 }
