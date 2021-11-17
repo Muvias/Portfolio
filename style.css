@@ -211,6 +211,8 @@ p {
 
 .social li img {
     opacity: 0.7;
+
+    width: 1.875rem;
 }
 
 .social li img:hover {
@@ -402,6 +404,10 @@ p {
     font-size: 1em;
 }
 
+.work .title p a {
+    text-decoration: none;
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Contact <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 .contact {
@@ -415,59 +421,56 @@ p {
 
 }
 
-.contact .contactForm {
-    position: relative;
 
-    width: 700px;
-    margin-top: 20px;
-}
+@media (max-width: 991px) {
+    .banner .imgSidebar {
+        display: none;
+    }
 
-.contact .contactForm .row {
-    display: flex;
+    .banner .contentBox, .sidebar {
+        width: 100%;
+        padding: 40px;
+    }
 
-    width: 100%;
-}
+    .logoText {
+        left: 40px;
+    }
 
-.contact .contactForm .row .col50 {
-    width: 50%;
-    margin: 10px;
-}
+    .toggle { 
+        right: 40px;
+    }
 
-.contact .contactForm .row .col100 {
-    text-align: center;
+    .sci {
+        left: 40px;
+    }
 
-    width: 100%;
-    margin: 10px;
-}
+    .section {
+        padding: 40px;
+    }
 
-.contact .contactForm .row input,
-.contact .contactForm .row textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    .sidebar ul li a {
+        font-size: 1.5em;
+    }
 
-    border: none;
-    outline: none;
+    .about .content {
+        flex-direction: column;
 
-    background: #dba933;
-    color: #111;
+        margin-top: 0;
+    }
 
-    resize: none;
-}
+    .about .content .textBox {
+        min-width: 100%;
+        width: 100%;
+    }
 
-.contact .contactForm .row textarea {
-    height: 100px;
-}
+    .about .content .imgBox {
+        margin-left: 0;
+    }
+    
+    .services .content .servicesBox {
+        padding: 30px 20px;
 
-.contact .contactForm .row input[type="submit"] {
-    display: inline-block;
-    padding: 10px 30px;
-    max-width: 150px;
-
-    font-weight: 500;
-    letter-spacing: 2px;
-
-    color: #000;
-
-    cursor: pointer;
+        max-width: 340px;
+        margin: 10px;
+    }
 }
