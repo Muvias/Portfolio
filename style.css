@@ -34,6 +34,12 @@ p {
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+
+    color: #fec63e;
+}
+
 .toggle {
     position: fixed;
 
@@ -389,6 +395,7 @@ p {
 .work .content .workBox .textBox {
     background: #000;
     opacity: 0;
+    text-transform: uppercase;
 
     transition: 0.5s;
 }
@@ -397,15 +404,19 @@ p {
     opacity: 1;
 }
 
-.work .content .workBox:hover h3 {
+.work .content .workBox:hover a {
     color: #fec63e;
-    text-transform: uppercase;
+
+    text-decoration: none;
+
     letter-spacing: 1px;
     font-size: 1em;
 }
 
 .work .title p a {
     text-decoration: none;
+
+    color: #000;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Contact <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
