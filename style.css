@@ -432,6 +432,7 @@ a {
 
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> @Media <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 @media (max-width: 991px) {
     .banner .imgSidebar {
@@ -483,5 +484,26 @@ a {
 
         max-width: 340px;
         margin: 10px;
+    }
+}
+
+@media (min-width: 1330px) {
+    .work .content .workBox {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .work .content .workBox {
+        width: 380px;
+        height: 310px;
+    }
+}
+
+@media (min-width: 1650px) {
+    .work .content .workBox {
+        width: 420px;
+        height: 310px;
     }
 }
