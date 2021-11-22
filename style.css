@@ -434,6 +434,141 @@ a {
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> @Media <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
+@media (max-height: 740px) {
+    .banner .contentBox, .sidebar {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .banner .contentBox h2 {
+        font-size: 2.2em;
+    }
+
+    .banner .contentBox h4 {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        font-size: 1.2em;
+        
+        top: 30px;
+        left: 40px;
+    }
+
+    .social {
+        left: 40px;
+        bottom: 10px;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    .banner .contentBox, .sidebar {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .banner .contentBox h2 {
+        font-size: 2em;
+    }
+
+    .banner .contentBox h4 {
+        font-size: 1.1em;
+    }
+
+    .logo {
+        font-size: 1.1em;
+        
+        top: 30px;
+        left: 40px;
+    }
+
+    .social {
+        left: 40px;
+        bottom: 10px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    section {
+        padding: 60px;
+    }
+
+    .banner .imgSidebar {
+        display: none;
+    }
+
+    .banner .contentBox, .sidebar {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .logo { 
+        left: 40px;
+    }
+
+    .social {
+        left: 40px;
+    }
+
+    .logoText {
+        left: 40px;
+    }
+
+    .toggle { 
+        right: 40px;
+    }
+
+    .sci {
+        left: 40px;
+    }
+
+    .section {
+        padding: 40px;
+    }
+
+    .sidebar ul li a {
+        font-size: 1.5em;
+    }
+
+    .about .content {
+        flex-direction: column;
+
+        margin-top: 0;
+    }
+
+    .about .content .textBox {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .about .content .imgBox {
+        margin-left: 0;
+    }
+    
+    .services .content .servicesBox {
+        padding: 30px 20px;
+
+        max-width: 340px;
+        margin: 10px;
+    }
+}
+
 @media (max-width: 991px) {
     .banner .imgSidebar {
         display: none;
@@ -442,6 +577,14 @@ a {
     .banner .contentBox, .sidebar {
         width: 100%;
         padding: 40px;
+    }
+
+    .logo { 
+        left: 40px;
+    }
+
+    .social {
+        left: 40px;
     }
 
     .logoText {
@@ -505,5 +648,45 @@ a {
     .work .content .workBox {
         width: 420px;
         height: 310px;
+    }
+}
+
+@media (max-height: 660px) and (max-width: 320px) {
+    .banner .contentBox, .sidebar {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .banner .contentBox h2 {
+        font-size: 1.4em;
+    }
+
+    .banner .contentBox h4 {
+        font-size: 1em;
+    }
+
+    .logo {
+        font-size: 1em;
+        
+        top: 30px;
+        left: 40px;
+    }
+
+    .social {
+        left: 40px;
+        bottom: 10px;
+    }
+
+    .toggle {
+        width: 3em;
+        height: 3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    section {
+        padding: 50px;
     }
 }
