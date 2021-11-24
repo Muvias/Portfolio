@@ -435,6 +435,10 @@ a {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> @Media <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 @media (max-height: 740px) {
+    .banner .imgSidebar {
+        display: none;
+    }
+
     .banner .contentBox, .sidebar {
         width: 100%;
         padding: 40px;
@@ -466,6 +470,21 @@ a {
 
     section {
         padding: 50px;
+    }
+
+    .about .content {
+        flex-direction: column;
+
+        margin-top: 0;
+    }
+
+    .about .content .textBox {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .about .content .imgBox {
+        margin-left: 0;
     }
 }
 
@@ -635,6 +654,28 @@ a {
     }
 }
 
+@media (max-width: 1329px) {
+    .work .content .workBox {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .about .content {
+        flex-direction: column;
+
+        margin-top: 0;
+    }
+
+    .about .content .textBox {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .about .content .imgBox {
+        margin-left: 0;
+    }
+}
+
 @media (min-width: 1330px) {
     .work .content .workBox {
         width: 320px;
@@ -694,4 +735,19 @@ a {
     section {
         padding: 50px;
     }
+}
+
+@media (min-height: 741px) and (max-height: 800px) {
+    .banner .contentBox h2 {
+        font-size: 2.5em;
+    }
+
+    .banner .contentBox h4 {
+        font-size: 1.4em;
+    }
+
+    .banner .contentBox h4 span {
+        font-size: 1.3em;
+    }
+    
 }
