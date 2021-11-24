@@ -432,6 +432,34 @@ a {
 
 }
 
+.back-to-top{
+    position: fixed;
+
+    background: #fcbb25;
+
+    right: 40px;
+    bottom: 1rem;
+    padding: 0.4rem;
+    line-height: 0;
+
+    clip-path: circle();
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.5s;
+    transform: translateY(200%);
+
+    z-index: 1;
+  }
+  .back-to-top.show{
+    visibility: visible;
+
+    opacity: 1;
+    
+    transform: translateY(0);
+  }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> @Media <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 @media (max-height: 740px) {
