@@ -628,6 +628,11 @@ a {
         max-width: 340px;
         margin: 10px;
     }
+
+    .contactInfos a {
+        display: flex;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 1330px) {
